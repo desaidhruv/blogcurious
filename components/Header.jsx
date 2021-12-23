@@ -107,26 +107,26 @@ const Header = () => {
                     </a>
                   </li>
                   {categories.map((category, index) => (
-                    <li key={index}>
-                      <a
+                    <Link key={index} href={`/category/${category.slug}`}>
+                      <span
                         className="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-gray-100
-            "
-                        href={`/category/${category.slug}`}
+                        cursor-pointer
+             dropdown-item
+             text-sm
+             py-2
+             px-4
+             font-normal
+             block
+             w-full
+             whitespace-nowrap
+             bg-transparent
+             text-gray-700
+             hover:bg-gray-100
+           "
                       >
                         {category.name}
-                      </a>
-                    </li>
+                      </span>
+                    </Link>
                     // <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">{category.name}</span></Link>
                   ))}
                 </ul>
@@ -263,11 +263,11 @@ const Header = () => {
           border-none
         "
                 >
-                
                   {categories.map((category, index) => (
-                    <li key={index}>
-                      <a
+                    <Link key={index} href={`/category/${category.slug}`}>
+                      <span
                         className="
+                        cursor-pointer
               dropdown-item
               text-sm
               py-2
@@ -280,11 +280,10 @@ const Header = () => {
               text-gray-700
               hover:bg-gray-100
             "
-                        href={`/category/${category.slug}`}
                       >
                         {category.name}
-                      </a>
-                    </li>
+                      </span>
+                    </Link>
                   ))}
                 </ul>
               </div>
