@@ -13,19 +13,19 @@ const Header = () => {
 
   return (
     <>
-      <div className=" bg-white ">
+      <div className=" bg-black-900 border-b border-2-white ">
         <nav className="2xl:container 2xl:mx-auto sm:py-6 sm:px-7 py-5 px-4">
           {/* For large and Medium-sized Screen */}
           <div className="flex justify-between ">
             <div className=" flex space-x-3 items-center">
-              <h1 className=" font-bold text-2xl leading-6 text-gray-800">
+              <h1 className=" font-bold text-2xl leading-6 text-white">
                 <Link href="/">Curious Whale</Link>
               </h1>
             </div>
             <div className="hidden sm:flex flex-row space-x-4">
               {/* //dropdown */}
 
-              <div className="dropdown relative ">
+              <div className="dropdown relative">
                 <button
                   className="
           dropdown-toggle
@@ -86,38 +86,18 @@ const Header = () => {
           border-none
         "
                 >
-                  <li>
-                    <a
-                      className="
-              dropdown-item
-              text-sm
-              py-2
-              px-4
-              font-normal
-              block
-              w-full
-              whitespace-nowrap
-              bg-transparent
-              text-gray-700
-              hover:bg-gray-100
-            "
-                      href="#"
-                    >
-                      Action
-                    </a>
-                  </li>
                   {categories.map((category, index) => (
                     <Link key={index} href={`/category/${category.slug}`}>
                       <span
                         className="
                         cursor-pointer
              dropdown-item
-             text-sm
+             text-md
              py-2
              px-4
              font-normal
              block
-             w-full
+             w-
              whitespace-nowrap
              bg-transparent
              text-gray-700
