@@ -121,7 +121,6 @@ const Header = () => {
                         {category.name}
                       </span>
                     </Link>
-                    // <Link key={index} href={`/category/${category.slug}`}><span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">{category.name}</span></Link>
                   ))}
                 </ul>
               </div>
@@ -131,27 +130,28 @@ const Header = () => {
             <div
               id="bgIcon"
               onClick={() => setshow(!show)}
-              className={`focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800  justify-center items-center sm:hidden cursor-pointer`}
+              className={`focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 justify-center items-center sm:hidden  cursor-pointer`}
             >
               <svg
+                
                 className={`${show ? "hidden" : ""}`}
                 width={24}
                 height={24}
-                viewBox="0 0 24 24"
+                viewBox="0 0 24 24" 
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   className=" transform duration-150"
                   d="M4 6H20"
-                  stroke="#1F2937"
+                  stroke="white"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M4 12H20"
-                  stroke="#1F2937"
+                  stroke="white"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -159,7 +159,7 @@ const Header = () => {
                 <path
                   className=" transform duration-150"
                   d="M4 18H20"
-                  stroke="#1F2937"
+                  stroke="white"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -175,14 +175,14 @@ const Header = () => {
               >
                 <path
                   d="M18 6L6 18"
-                  stroke="#1F2937"
+                  stroke="white"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
                 <path
                   d="M6 6L18 18"
-                  stroke="#1F2937"
+                  stroke="white"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
