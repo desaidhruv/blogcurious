@@ -22,6 +22,7 @@ const Header = () => {
                 <Link href="/">Curious Whale</Link>
               </h1>
             </div>
+
             <div className="hidden sm:flex flex-row space-x-6">
               {/* //dropdown */}
               <Link href="/PrivacyPolicy">
@@ -31,12 +32,12 @@ const Header = () => {
               </Link>
               <Link href="/aboutus">
                 <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
-                 About us 
+                  About us
                 </span>
               </Link>
               <Link href="/contactus">
                 <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
-                 Contact us 
+                  Contact us
                 </span>
               </Link>
               <div className="pr-5 dropdown relative">
@@ -124,8 +125,24 @@ const Header = () => {
                   ))}
                 </ul>
               </div>
+              <Link href="/search">
+                <div className="flex items-center space-x-3">
+                  <button className="bg-white text-gray-800 font-bold rounded-full shadow-lg px-4 py-2 focus:outline-none focus:shadow-outline">
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </Link>
             </div>
-
             {/* Burger Icon */}
             <div
               id="bgIcon"
@@ -133,11 +150,10 @@ const Header = () => {
               className={`focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 justify-center items-center sm:hidden  cursor-pointer`}
             >
               <svg
-                
                 className={`${show ? "hidden" : ""}`}
                 width={24}
                 height={24}
-                viewBox="0 0 24 24" 
+                viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -282,6 +298,23 @@ const Header = () => {
                 </ul>
               </div>
             </div>
+            <Link href="/search">
+              <div className="flex items-center space-x-3">
+                <button className="bg-white text-gray-800 font-bold rounded-full shadow-lg px-4 py-2 focus:outline-none focus:shadow-outline">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              </div>
+            </Link>
           </div>
         </nav>
       </div>
