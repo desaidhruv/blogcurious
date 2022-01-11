@@ -25,21 +25,6 @@ const Header = () => {
 
             <div className="hidden sm:flex flex-row space-x-6">
               {/* //dropdown */}
-              <Link href="/PrivacyPolicy">
-                <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
-                  Privacy Policy
-                </span>
-              </Link>
-              <Link href="/aboutus">
-                <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
-                  About us
-                </span>
-              </Link>
-              <Link href="/contactus">
-                <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
-                  Contact us
-                </span>
-              </Link>
               <div className="pr-5 dropdown relative">
                 <button
                   className="
@@ -125,6 +110,16 @@ const Header = () => {
                   ))}
                 </ul>
               </div>
+              <Link href="/aboutus">
+                <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
+                  About us
+                </span>
+              </Link>
+              <Link href="/contactus">
+                <span className="md:float-right mt-1.5  align-middle text-white ml-4 font-light cursor-pointer">
+                  Contact us
+                </span>
+              </Link>
               <Link href="/search">
                 <div className="flex items-center space-x-3">
                   <button className="bg-white text-gray-800 font-bold rounded-full shadow-lg px-4 py-2 focus:outline-none focus:shadow-outline">
