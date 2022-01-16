@@ -68,6 +68,13 @@ export default function Footer() {
                 </a>
               </p>
               </Link>
+              <Link href={"/PrivacyPolicy"}>
+              <p className="mb-4">
+                <a  className="text-gray-600 cursor-pointer">
+                  Privacy Policy
+                </a>
+              </p>
+              </Link>
             </div>
             <div className="">
               <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
