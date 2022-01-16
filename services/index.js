@@ -235,7 +235,7 @@ export const getComments = async (slug) => {
 
   return result.comments;
 };
-
+//spmething
 //get search results
 export const getSearchResults = async (searchTerm) => {
   const query = gql`
